@@ -1,0 +1,95 @@
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+main {
+  background-color: #dbd8e3;
+}
+
+.intro-section {
+  padding: 5rem;
+}
+
+.name-header {
+  font-family: "Cookie", cursive;
+}
+
+.my-name:hover {
+  color: #5c5470;
+  transition: color 0.5s ease;
+  cursor: default;
+}
+
+.my-name:not(:hover) {
+  transition: color 0.7s ease;
+}
+
+.short-bio {
+  width: 75%;
+}
+
+.blog-card {
+  width: 400px;
+}
+
+.my-card-title {
+  padding-bottom: 1rem;
+}
+
+.blog-btn {
+  padding-bottom: 3rem;
+}
+
+#main-section-2 {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+
+.post-card {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.posts-container {
+  padding-top: 2rem;
+}
+
+#main-section-3 {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+  padding-left: 8rem;
+  padding-right: 8rem;
+  background-color: #5c5470;
+}
+
+.socials-container {
+  padding-top: 3rem;
+}
+.fa-2xl {
+  font-size: 60px;
+}
+
+.linkedin {
+  color: #0a66c2;
+}
+
+.socials-col {
+  text-align: center;
+}
+
+.twitter {
+  color: #1da1f2;
+}
+
+.github {
+  color: #171515;
+}
+
+#footer {
+  background-color: #dbd8e3;
+  padding-top: 3rem;
+}
+
+li {
+  list-style-type: none;
+}

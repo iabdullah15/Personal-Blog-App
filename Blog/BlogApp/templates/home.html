@@ -1,0 +1,114 @@
+{% extends 'base.html' %} {% block title %}
+<title>Home</title>
+{% endblock %} 
+{% block styles %}
+
+{{block.super}}
+
+{% endblock %}
+
+{% block content %}
+
+
+<section id="main-section-1">
+  <div class="container-fluid intro-section">
+    <div class="row">
+      <div class="col-lg-6">
+        <p>Hello everyone!</p>
+        <h1 class="name-header">
+          I'm <span class="my-name"> Abdullah Zubair</span>
+        </h1>
+        <p class="short-bio">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat
+          impedit repudiandae vitae consectetur reprehenderit ex. Numquam
+          recusandae nulla consectetur, porro minima, odit rerum beatae sed
+          repellendus voluptatum obcaecati, sunt error.
+        </p>
+      </div>
+      <div class="col-lg-6">
+        <div class="card blog-card bg-light">
+          <div class="card-header my-card-header">Blog</div>
+          <div class="card-body my-card-body">
+            <h5 class="card-title my-card-title">Click to view all posts</h5>
+            <div class="blog-btn">
+              <a href="#" class="btn btn-outline-dark">Go to blog</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<hr />
+<section id="main-section-2">
+  <h1 style="text-align: center">Recent Posts</h1>
+
+  <div class="container-fluid posts-container">
+    <div class="row">
+      <div class="col-md-4">
+        <div class="card post-card" style="width: 15rem">
+          <div class="card-body">
+            <h5 class="card-title">Special title treatment</h5>
+            <p class="card-text">
+              With supporting text below as a natural lead-in to additional
+              content.
+            </p>
+            <a href="#" class="btn btn-outline-dark">Go somewhere</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card post-card" style="width: 15rem">
+          <div class="card-body">
+            <h5 class="card-title">Special title treatment</h5>
+            <p class="card-text">
+              With supporting text below as a natural lead-in to additional
+              content.
+            </p>
+            <a href="#" class="btn btn-outline-dark">Go somewhere</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card post-card" style="width: 15rem">
+          <div class="card-body">
+            <h5 class="card-title">Special title treatment</h5>
+            <p class="card-text">
+              With supporting text below as a natural lead-in to additional
+              content.
+            </p>
+            <a href="#" class="btn btn-outline-dark">Go somewhere</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<hr />
+
+<div id="main-section-3">
+  <h3 style="text-align: center; color: white">
+    Follow my socials to get to know me more!
+  </h3>
+
+  <div class="container socials-container">
+    <div class="row">
+      <div class="socials-col col-md-4">
+        <a href="#"> <i class="linkedin fa-brands fa-linkedin fa-2xl"></i></a>
+      </div>
+
+      <div class="socials-col col-md-4">
+        <a href="#">
+          <i class="twitter fa-brands fa-twitter fa-2xl"></i>
+        </a>
+      </div>
+      <div class="socials-col col-md-4">
+        <a href="#">
+          <i class="github fa-brands fa-square-github fa-2xl"></i>
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+
+{% endblock %}

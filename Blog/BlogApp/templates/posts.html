@@ -1,0 +1,44 @@
+{% extends 'base.html' %}
+{% load static %}
+{% load humanize %}
+
+
+{% block title %}
+
+<title>Blog Posts</title>
+
+{% endblock %}
+
+{% block styles %}
+
+{{ block.super }}
+
+{% endblock %}
+
+{% block content %}
+
+<div class="container">
+    <h1>Blog Posts</h1>
+    {% if posts %}
+    {% for post in posts %}
+
+    <div class="row">
+        <div class="col-sm-12">
+            <p>Created {{ post.time_created|naturaltime }}</p>
+            <p>{{ post.title }}</p>
+            <p>{{ post.body|slice:":10" }}...</p>
+            <button>Read More</button>
+        </div>
+    </div>
+    {% endfor %}
+
+    {% else %}
+
+    <p>No posts to show</p>
+
+    {% endif %}
+
+</div>
+
+
+{% endblock %}

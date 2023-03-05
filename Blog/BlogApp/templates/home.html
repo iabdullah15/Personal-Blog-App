@@ -31,7 +31,7 @@
           <div class="card-body my-card-body">
             <h5 class="card-title my-card-title">Click to view all posts</h5>
             <div class="blog-btn">
-              <a href="#" class="btn btn-outline-dark">Go to blog</a>
+              <a href="{% url 'blog' %}" class="btn btn-outline-dark">Go to blog</a>
             </div>
           </div>
         </div>
@@ -41,6 +41,11 @@
 </section>
 <hr />
 <section id="main-section-2">
+
+  {% if posts %}
+
+  {% for post in posts %}
+
   <h1 style="text-align: center">Recent Posts</h1>
 
   <div class="container-fluid posts-container">
@@ -48,41 +53,26 @@
       <div class="col-md-4">
         <div class="card post-card" style="width: 15rem">
           <div class="card-body">
-            <h5 class="card-title">Special title treatment</h5>
+            <h5 class="card-title">{{post.title}}</h5>
             <p class="card-text">
               With supporting text below as a natural lead-in to additional
               content.
             </p>
-            <a href="#" class="btn btn-outline-dark">Go somewhere</a>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-4">
-        <div class="card post-card" style="width: 15rem">
-          <div class="card-body">
-            <h5 class="card-title">Special title treatment</h5>
-            <p class="card-text">
-              With supporting text below as a natural lead-in to additional
-              content.
-            </p>
-            <a href="#" class="btn btn-outline-dark">Go somewhere</a>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-4">
-        <div class="card post-card" style="width: 15rem">
-          <div class="card-body">
-            <h5 class="card-title">Special title treatment</h5>
-            <p class="card-text">
-              With supporting text below as a natural lead-in to additional
-              content.
-            </p>
-            <a href="#" class="btn btn-outline-dark">Go somewhere</a>
+            <a href="" class="btn btn-outline-dark">Go somewhere</a>
           </div>
         </div>
       </div>
     </div>
   </div>
+
+  {% endfor %}
+
+  {% else %}
+
+  <h1 style="text-align: center">No posts to show</h1>
+
+  {% endif %}
+
 </section>
 <hr />
 

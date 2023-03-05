@@ -10,3 +10,6 @@ class Post(models.Model):
     body = models.TextField()
     time_created = models.DateTimeField(auto_now=True)
     last_modified = models.DateTimeField(blank=True)
+
+    def __str__(self) -> str:
+        return self.title
